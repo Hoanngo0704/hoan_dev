@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <title>Chọn loại thủ tục</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="menu-body">
+  <div class="container narrow">
+    <div class="card">
+      <h2>Chọn thủ tục để kiểm tra</h2>
+      <div class="field">
+        <label>Loại thủ tục</label>
+        <select id="docSelect" class="input">
+          <option value="birth">Thủ tục đăng ký khai sinh</option>
+          <!-- Sau này mở rộng thêm ở đây -->
+        </select>
+      </div>
+      <div class="row">
+        <button id="goBtn" class="btn">Kiểm tra</button>
+      </div>
+    </div>
+  </div>
+  <script defer src="{{ url_for('static', filename='js/app_menu.js') }}"></script>
+</body>
+</html>
